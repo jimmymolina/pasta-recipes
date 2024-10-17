@@ -1,0 +1,594 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="page-description">
+    <meta name="keywords" content="Spaghetti al Frutti di Mare" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti al Frutti di Mare</title>
+    <link rel="author" href="humans.txt" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/images/icons/desktop/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/images/icons/desktop/android-chrome-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="A zUIx website">
+    <link rel="apple-touch-icon-precomposed" href="/images/icons/desktop/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/icons/desktop/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Tile color for Windows -->
+    <meta name="msapplication-TileImage" content="/images/icons/desktop/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/desktop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/desktop/favicon-16x16.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="https://www.example.com/">
+    -->
+
+    <link rel="preload" as="style" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="stylesheet" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="preload" as="style" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+
+
+
+    <!-- zuix.js https://github.com/zuixjs/zuix -->
+    <link rel="preload" as="script" href="/js/zuix/zuix.min.js">
+    <link rel="preload" as="script" href="/config.js">
+    <link rel="preload" as="script" href="/js/zuix/animate-css.js">
+    <script src="/js/zuix/zuix.min.js"></script>
+    <script src="/config.js"></script>
+    <script src="/js/zuix/animate-css.js"></script>
+
+<style>
+:root {
+    --primary-color: #000;
+    --accent-color: deeppink;
+    --background-color: #ffffff;
+    --header-color: #1765bd;
+    --header-background-color: rgba(248,248,248,1);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+main {
+    overflow-x: hidden;
+    width: 100%;
+}
+a {
+    text-decoration: none!important;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 150%;
+    line-height: 140%;
+    font-family: serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+p code {
+    opacity: 0.8;
+    font-size: 85%!important;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    line-height: 160%;
+    margin-bottom: 8px;
+}
+li pre {
+    line-height: 100%;
+}
+h1,h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h1 {
+    font-size: 220%;
+    font-weight: 700;
+}
+h2 {
+    opacity: 0.8;
+    font-size:160%;
+    font-weight: 700;
+    line-height: 36px;
+}
+h3 {
+    opacity: 0.6;
+    font-size:140%;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+h4 {
+    opacity: 0.6;
+}
+h5 {
+    opacity: 0.6;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color:gray;
+}
+
+blockquote {
+    opacity: 50%;
+}
+
+header {
+    width: 100%;
+    color: var(--header-color);
+    text-shadow:
+            3px 3px 0 rgba(0,0,0,5%),
+            -1px -1px 0 rgba(0,0,0,5%),
+            1px -1px 0 rgba(0,0,0,5%),
+            -1px 1px 0 rgba(0,0,0,5%),
+            1px 1px 0 rgba(0,0,0,5%);
+}
+header a,header a:visited {
+    color: var(--header-color);
+}
+header h1 {
+    margin: 0;
+}
+header .material-icons {
+    font-size: 280%;
+    opacity: 0.5;
+}
+footer {
+    width: 100%;
+/*    color: #FFF59D; */
+}
+footer a {
+/*    color: white; */
+    font-size:110%;
+}
+
+li small {
+    font-family: Helvetica, sans-serif;
+    font-size: 60%;
+    font-weight: 600;
+    margin-left: 6px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+pre {
+    margin-top: 24px!important;
+    margin-bottom: 24px!important;
+    max-width: 100%;
+}
+code {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+pre[class*="language-"] {
+    font-size: 120%;
+}
+
+pre code {
+    color: darkgreen;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+ul.list {
+    margin-top: 0;
+}
+ul.list li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+    transition: all .2s ease-out;
+}
+button:hover, button:active {
+    background: rgba(180,180,180,0.1)!important;
+    box-shadow: inset 0 0 0 2px rgb(37 44 97 / 9%), 0 0 0 0 rgb(93 100 148 / 7%);
+}
+
+.header-cover {
+    padding: 8px;
+    height: 64px;
+    background: var(--header-background-color);
+    border-bottom: solid 1px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 2px -2px rgba(100,100,100,0.15);
+}
+.main-content {
+    padding: 24px 8px 48px;
+    color:  black;
+}
+
+.title {
+    padding: 8px;
+    /*
+    max-width: calc(100vw - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     */
+}
+.image-cover {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body layout="column top-center">
+
+
+    <img class="image-cover" src="https://i.ytimg.com/vi/drTkUNjnQ8U/maxresdefault.jpg">
+
+
+<h1 class="title animate__animated animate__fadeIn">Spaghetti al Frutti di Mare</h1>
+
+    <div self="size-large" layout="column top-stretch" style="padding-right: 12px;padding-left: 12px">
+        <small>24 Sep 2024</small>
+    </div>
+
+
+<main self="size-large center" class="main-content animate__animated animate__fadeIn" layout="column top-stretch">
+
+    <p>Spaghetti al Frutti di Mare is a classic Italian seafood pasta dish that combines the flavors of various shellfish with spaghetti.</p>
+<p>It’s a delightful and elegant dish, perfect for special occasions or when you want to treat yourself to a taste of the sea. The combination of garlic, tomatoes, white wine, and fresh herbs enhances the dish beautifully, resulting in a balanced flavor profile that highlights the freshness of the seafood.</p>
+<p><u><b>Ingredients (Serves 4):</b></u></p>
+<ul>
+<li>
+<p><strong>Pasta:</strong></p>
+<ul>
+<li>400g spaghetti</li>
+</ul>
+</li>
+<li>
+<p><strong>Seafood:</strong></p>
+<ul>
+<li>
+<p>200g shrimp (peeled and deveined)</p>
+</li>
+<li>
+<p>200g mussels (cleaned)</p>
+</li>
+<li>
+<p>200g clams (cleaned)</p>
+</li>
+<li>
+<p>200g calamari (sliced into rings)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sauce:</strong></p>
+<ul>
+<li>
+<p>3 tablespoons olive oil</p>
+</li>
+<li>
+<p>3-4 cloves garlic (thinly sliced)</p>
+</li>
+<li>
+<p>1 small onion (finely chopped)</p>
+</li>
+<li>
+<p>1 cup cherry tomatoes (halved) or 400g canned diced tomatoes</p>
+</li>
+<li>
+<p>1/2 cup dry white wine</p>
+</li>
+<li>
+<p>Salt and pepper (to taste)</p>
+</li>
+<li>
+<p>A pinch of red pepper flakes (optional)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Garnish:</strong></p>
+<ul>
+<li>
+<p>Fresh parsley (chopped)</p>
+</li>
+<li>
+<p>Lemon wedges (for serving)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><u><b>Step-by-Step Preparation Method:</b></u></p>
+<ol>
+<li>
+<p><strong>Cook the Pasta:</strong></p>
+<ul>
+<li>
+<p>Bring a large pot of salted water to a boil.</p>
+</li>
+<li>
+<p>Add the spaghetti and cook according to package instructions until al dente.</p>
+</li>
+<li>
+<p>Reserve 1 cup of pasta water, then drain the spaghetti and set aside.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Prepare the Seafood:</strong></p>
+<ul>
+<li>
+<p>In a large skillet, heat 3 tablespoons of olive oil over medium heat.</p>
+</li>
+<li>
+<p>Add the garlic and onion, sautéing until the onion is translucent and fragrant.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Add the Tomatoes:</strong></p>
+<p>-Stir in the cherry tomatoes (or canned tomatoes) and cook for about 5 minutes, allowing the tomatoes to soften and
+juices to release.</p>
+</li>
+<li>
+<p><strong>Deglaze:</strong></p>
+<ul>
+<li>
+<p>Pour in the white wine, scraping the bottom of the skillet to release any flavorful bits.</p>
+</li>
+<li>
+<p>Let it simmer for 2-3 minutes until the alcohol evaporates.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cook the Seafood:</strong></p>
+<ul>
+<li>
+<p>Add the mussels and clams first, followed by the shrimp and calamari.</p>
+</li>
+<li>
+<p>Stir well, cover the skillet, and cook for about 5-7 minutes, or until the mussels and clams open up.</p>
+</li>
+<li>
+<p>Discard any that do not open.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Combine with Pasta:</strong></p>
+<ul>
+<li>
+<p>Add the cooked spaghetti to the skillet, tossing everything together.</p>
+</li>
+<li>
+<p>If the mixture is too dry, gradually add the reserved pasta water until you reach the desired consistency.</p>
+</li>
+<li>
+<p>Season with salt, pepper, and red pepper flakes (if using) to taste.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Serve:</strong></p>
+<ul>
+<li>
+<p>Plate the spaghetti al frutti di mare and garnish with freshly chopped parsley.</p>
+</li>
+<li>
+<p>Serve with lemon wedges on the side.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><u><b>Variations:</b></u></p>
+<ul>
+<li>
+<p><strong>Spicy Version:</strong> Add more red pepper flakes or finely chopped fresh chili for a spicy kick.</p>
+</li>
+<li>
+<p><strong>Creamy Version:</strong> Stir in a splash of heavy cream at the end for a creamy sauce.</p>
+</li>
+<li>
+<p><strong>Different Seafood:</strong> Substitute or add seafood like scallops, crab, or lobster for variety.</p>
+</li>
+<li>
+<p><strong>Vegetarian Adaptation:</strong> Replace seafood with sautéed vegetables like zucchini, bell peppers, and mushrooms for a vegetarian-friendly dish.</p>
+</li>
+<li>
+<p><strong>Herbs:</strong> Incorporate fresh basil, dill, or oregano for added flavor.</p>
+</li>
+</ul>
+<p>This spaghetti al frutti di mare is versatile and can easily be adjusted to your taste.</p>
+<p><b><i>Enjoy your cooking!</i></b></p>
+<img src="https://imag.bonviveur.com/espaguetis-frutti-di-mare.jpg" width="300" height="300">
+
+
+    
+
+
+
+
+<div layout="row center-spread" style="margin-top: 56px; margin-bottom: 56px; padding-left: 8px; padding-right: 8px; font-size: 140%">
+
+    
+    <a href="/pages/with-seafood/with-seafood2/" style="text-align: center">
+        <img src="https://khinskitchen.com/wp-content/uploads/2022/05/garlic-prawn-pasta-09-480x270.jpg" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Fettuccine with Prawns and Garlic Sauce</div>
+        <div layout="row center-center">
+            <i class="material-icons">arrow_left</i>&nbsp;
+            <span style="padding-right: 24px">Previous</span>
+        </div>
+    </a>
+    
+
+    
+    <div>&nbsp;</div>
+    
+
+</div>
+<style>
+    .navigation-image {
+        border-radius: 32px;
+        border-color: rgba(100,200,200,0.5);
+    }
+    .navigation-title {
+        margin: 8px;
+        opacity: 0.6;
+        color: darkgreen;
+        font-size: 80%;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
+
+
+    <!--
+// TODO: List of related pages
+-->
+
+
+</main>
+
+<div z-load="@lib/components/menu-overlay" z-context="actions-menu" z-lazy="false" class="visible-on-ready">
+<div #items>    <button onclick="closeContent()" style="height:42px;"><span>Close</span><i class="material-icons"> close</i></button>
+</div>
+  <!-- custom open/close menu button -->
+  <div #menu_button>
+    <a class="circle-button" href="javascript:;" title="Open menu" >
+      <i class="material-icons">toc</i>
+    </a>
+  </div>
+  <div #menu_button_close>
+    <a class="circle-button" href="javascript:;" title="Close menu" >
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+</div>
+<script>
+function navigateTo(anchor) {
+  const target = zuix.$.find('a[name="' + anchor + '"]');
+  scrollHelper.scrollTo(target, 300);
+}
+</script>
+
+
+<footer self="size-large" layout="columns center-center" style="min-height: 80px">
+
+    
+
+</footer>
+
+
+
+
+<!-- Built with love using zUIx Web Starter -->
+
+
+
+</body>
+
+<!-- page script -->
+<script>
+    function closeContent() {
+  if (window.parent.closeContentFrame) {
+    window.parent.closeContentFrame(location);
+  } else {
+    location.href = '../../../home';
+  }
+}
+function shareContent() {
+  const item = {
+    title: document.title,
+    text: document.querySelector('meta[name="description"]').content,
+    url: document.location.href
+  };
+  if (navigator.share) {
+    navigator.share(item).then(() => {
+      console.log('Document url shared.');
+    }).catch(console.error);
+  } else {
+    console.log(item);
+    console.log('Sharing is not available in the current context');
+  }
+}
+function printContent() {
+  window.print();
+}
+
+document.body.addEventListener('keyup', function(e) {
+  if (e.key === 'Escape') {
+    const actionMenu = zuix.context('actions-menu');
+    if (!actionMenu || !actionMenu.showing()) {
+      closeContent();
+    }
+  }
+});
+
+const history = window.history;
+if (history && history.pushState) {
+  history.pushState('back-detect', null, '#open');
+  window.onpopstate = function() {
+    closeContent();
+  };
+}
+
+</script>
+
+
+</html>
+

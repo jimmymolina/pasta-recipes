@@ -1,0 +1,589 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="page-description">
+    <meta name="keywords" content="Tagliatelle with Calamari in Tomato Sauce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagliatelle with Calamari in Tomato Sauce</title>
+    <link rel="author" href="humans.txt" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/images/icons/desktop/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/images/icons/desktop/android-chrome-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="A zUIx website">
+    <link rel="apple-touch-icon-precomposed" href="/images/icons/desktop/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/icons/desktop/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Tile color for Windows -->
+    <meta name="msapplication-TileImage" content="/images/icons/desktop/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/desktop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/desktop/favicon-16x16.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="https://www.example.com/">
+    -->
+
+    <link rel="preload" as="style" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="stylesheet" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="preload" as="style" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+
+
+
+    <!-- zuix.js https://github.com/zuixjs/zuix -->
+    <link rel="preload" as="script" href="/js/zuix/zuix.min.js">
+    <link rel="preload" as="script" href="/config.js">
+    <link rel="preload" as="script" href="/js/zuix/animate-css.js">
+    <script src="/js/zuix/zuix.min.js"></script>
+    <script src="/config.js"></script>
+    <script src="/js/zuix/animate-css.js"></script>
+
+<style>
+:root {
+    --primary-color: #000;
+    --accent-color: deeppink;
+    --background-color: #ffffff;
+    --header-color: #1765bd;
+    --header-background-color: rgba(248,248,248,1);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+main {
+    overflow-x: hidden;
+    width: 100%;
+}
+a {
+    text-decoration: none!important;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 150%;
+    line-height: 140%;
+    font-family: serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+p code {
+    opacity: 0.8;
+    font-size: 85%!important;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    line-height: 160%;
+    margin-bottom: 8px;
+}
+li pre {
+    line-height: 100%;
+}
+h1,h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h1 {
+    font-size: 220%;
+    font-weight: 700;
+}
+h2 {
+    opacity: 0.8;
+    font-size:160%;
+    font-weight: 700;
+    line-height: 36px;
+}
+h3 {
+    opacity: 0.6;
+    font-size:140%;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+h4 {
+    opacity: 0.6;
+}
+h5 {
+    opacity: 0.6;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color:gray;
+}
+
+blockquote {
+    opacity: 50%;
+}
+
+header {
+    width: 100%;
+    color: var(--header-color);
+    text-shadow:
+            3px 3px 0 rgba(0,0,0,5%),
+            -1px -1px 0 rgba(0,0,0,5%),
+            1px -1px 0 rgba(0,0,0,5%),
+            -1px 1px 0 rgba(0,0,0,5%),
+            1px 1px 0 rgba(0,0,0,5%);
+}
+header a,header a:visited {
+    color: var(--header-color);
+}
+header h1 {
+    margin: 0;
+}
+header .material-icons {
+    font-size: 280%;
+    opacity: 0.5;
+}
+footer {
+    width: 100%;
+/*    color: #FFF59D; */
+}
+footer a {
+/*    color: white; */
+    font-size:110%;
+}
+
+li small {
+    font-family: Helvetica, sans-serif;
+    font-size: 60%;
+    font-weight: 600;
+    margin-left: 6px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+pre {
+    margin-top: 24px!important;
+    margin-bottom: 24px!important;
+    max-width: 100%;
+}
+code {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+pre[class*="language-"] {
+    font-size: 120%;
+}
+
+pre code {
+    color: darkgreen;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+ul.list {
+    margin-top: 0;
+}
+ul.list li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+    transition: all .2s ease-out;
+}
+button:hover, button:active {
+    background: rgba(180,180,180,0.1)!important;
+    box-shadow: inset 0 0 0 2px rgb(37 44 97 / 9%), 0 0 0 0 rgb(93 100 148 / 7%);
+}
+
+.header-cover {
+    padding: 8px;
+    height: 64px;
+    background: var(--header-background-color);
+    border-bottom: solid 1px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 2px -2px rgba(100,100,100,0.15);
+}
+.main-content {
+    padding: 24px 8px 48px;
+    color:  black;
+}
+
+.title {
+    padding: 8px;
+    /*
+    max-width: calc(100vw - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     */
+}
+.image-cover {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body layout="column top-center">
+
+
+    <img class="image-cover" src="https://www.giallozafferano.com/images/280-28065/Tagliatelle-with-Squid-and-Cherry-Tomatoes_1200x800.jpg">
+
+
+<h1 class="title animate__animated animate__fadeIn">Tagliatelle with Calamari in Tomato Sauce</h1>
+
+    <div self="size-large" layout="column top-stretch" style="padding-right: 12px;padding-left: 12px">
+        <small>24 Sep 2024</small>
+    </div>
+
+
+<main self="size-large center" class="main-content animate__animated animate__fadeIn" layout="column top-stretch">
+
+    <p>Tagliatelle with Calamari in Tomato Sauce is a delightful Italian dish that combines the rich flavors of fresh calamari with a tangy tomato sauce and perfectly cooked tagliatelle.</p>
+<p>The dish is not only visually appealing but also packed with flavors, thanks to the combination of garlic, herbs, and the complementing textures of the pasta and seafood.</p>
+<p>It's a great choice for a special occasion or a cozy dinner, capturing the essence of Italian cuisine with its fresh ingredients and straightforward preparation.</p>
+<p><b>Recipe: Tagliatelle with Calamari in Tomato Sauce</b></p>
+<p><u><b>Ingredients</b></u></p>
+<ul>
+<li>
+<p><strong>For the pasta:</strong></p>
+<ul>
+<li>
+<p>400g tagliatelle (fresh or dried)</p>
+</li>
+<li>
+<p>Salt (for boiling water)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>For the calamari tomato sauce:</strong></p>
+<ul>
+<li>
+<p>400g calamari (cleaned and cut into rings)</p>
+</li>
+<li>
+<p>400g canned chopped tomatoes (or fresh tomatoes, diced)</p>
+</li>
+<li>
+<p>2-3 tablespoons olive oil</p>
+</li>
+<li>
+<p>2 cloves garlic (minced)</p>
+</li>
+<li>
+<p>1 small onion (finely chopped)</p>
+</li>
+<li>
+<p>1 teaspoon red pepper flakes (adjust for spice preference)</p>
+</li>
+<li>
+<p>1 teaspoon dried oregano</p>
+</li>
+<li>
+<p>Salt and black pepper (to taste)</p>
+</li>
+<li>
+<p>Fresh basil leaves (for garnish)</p>
+</li>
+<li>
+<p>Grated Parmesan cheese (optional, for serving)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><u><b>Step-by-Step Preparation Method</b></u></p>
+<ol>
+<li>
+<p><strong>Cook the Pasta:</strong></p>
+<ul>
+<li>
+<p>In a large pot, bring salted water to a boil.</p>
+</li>
+<li>
+<p>Add the tagliatelle and cook according to package instructions until al dente.</p>
+</li>
+<li>
+<p>Drain and set aside, reserving a cup of pasta water.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Prepare the Sauce:</strong></p>
+<ul>
+<li>
+<p>In a large skillet or saucepan, heat the olive oil over medium heat.</p>
+</li>
+<li>
+<p>Add the chopped onion and sauté until translucent, about 3-4 minutes.</p>
+</li>
+<li>
+<p>Add the minced garlic and red pepper flakes, cooking for an additional minute until fragrant.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Add Tomatoes:</strong></p>
+<ul>
+<li>
+<p>Stir in the canned chopped tomatoes (or fresh diced tomatoes). Add the dried oregano and season with salt and black pepper.</p>
+</li>
+<li>
+<p>Bring the mixture to a simmer and let it cook for about 10 minutes, allowing the flavors to meld and the sauce to slightly thicken.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cook the Calamari:</strong></p>
+<ul>
+<li>
+<p>Add the calamari rings to the sauce and cook for another 3-5 minutes, or until they turn opaque.</p>
+</li>
+<li>
+<p>Be careful not to overcook them, as calamari can become tough if cooked for too long.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Combine Pasta and Sauce:</strong></p>
+<ul>
+<li>
+<p>Add the cooked tagliatelle to the sauce, tossing gently to coat the pasta with the sauce.</p>
+</li>
+<li>
+<p>If the sauce is too thick, use some reserved pasta water to loosen it.</p>
+</li>
+<li>
+<p>Taste and adjust seasoning if necessary.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Serve:</strong></p>
+<ul>
+<li>
+<p>Plate the tagliatelle with calamari and top with fresh basil leaves.</p>
+</li>
+<li>
+<p>Optionally, sprinkle with grated Parmesan cheese before serving.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><u><b>Variations</b></u></p>
+<ol>
+<li>
+<p><strong>Add Vegetables:</strong></p>
+<p>-Incorporate vegetables such as bell peppers, zucchini, or spinach for added nutrition and flavor. Sauté these before adding the tomatoes.</p>
+</li>
+<li>
+<p><strong>Use Different Seafood:</strong></p>
+<p>-Mix in shrimp or mussels for a seafood medley. Adjust cooking times accordingly to ensure everything is cooked just right.</p>
+</li>
+<li>
+<p><strong>Creamy Version:</strong></p>
+<p>-Add a splash of heavy cream or a dollop of mascarpone cheese for a creamy sauce that contrasts beautifully with the tomato base.</p>
+</li>
+<li>
+<p><strong>Herb Variations:</strong></p>
+<p>-Experiment with different fresh herbs like parsley, thyme, or dill. Fresh parsley can be added just before serving for a fresh burst of flavor.</p>
+</li>
+<li>
+<p><strong>Spice it Up:</strong></p>
+<p>-If you enjoy heat, add more red pepper flakes or a dash of hot sauce to the sauce for an extra kick.</p>
+</li>
+</ol>
+<p>This dish is versatile and can easily be tailored to suit your taste preferences!</p>
+<p><b><i>Enjoy your culinary adventure with this Tagliatelle with Calamari in Tomato Sauce!</i></b></p>
+<img src="https://www.marcellinaincucina.com/wp-content/uploads/2023/05/calamarata-pasta-closeup.jpg" width="300" height="300">
+
+
+    
+
+
+
+
+<div layout="row center-spread" style="margin-top: 56px; margin-bottom: 56px; padding-left: 8px; padding-right: 8px; font-size: 140%">
+
+    
+    <a href="/pages/with-seafood/with-seafood7/" style="text-align: center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmd3-ZYJp9dW0kJVSUtCyZ8PbfgPPJLVBYLQ&s" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Spaghetti with Lobster and Garlic Butter</div>
+        <div layout="row center-center">
+            <i class="material-icons">arrow_left</i>&nbsp;
+            <span style="padding-right: 24px">Previous</span>
+        </div>
+    </a>
+    
+
+    
+    <a href="/pages/with-seafood/with-seafood5/" style="text-align: center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgR8f1ncBosZTBjdzcbdyDn5IdvfVBzydsOg&s" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Penne with Salmon and Dill Cream</div>
+        <div layout="row center-center">
+            <span style="padding-left: 24px">Next</span>
+            <i class="material-icons">arrow_right</i>&nbsp;
+        </div>
+    </a>
+    
+
+</div>
+<style>
+    .navigation-image {
+        border-radius: 32px;
+        border-color: rgba(100,200,200,0.5);
+    }
+    .navigation-title {
+        margin: 8px;
+        opacity: 0.6;
+        color: darkgreen;
+        font-size: 80%;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
+
+
+    <!--
+// TODO: List of related pages
+-->
+
+
+</main>
+
+<div z-load="@lib/components/menu-overlay" z-context="actions-menu" z-lazy="false" class="visible-on-ready">
+<div #items>    <button onclick="closeContent()" style="height:42px;"><span>Close</span><i class="material-icons"> close</i></button>
+</div>
+  <!-- custom open/close menu button -->
+  <div #menu_button>
+    <a class="circle-button" href="javascript:;" title="Open menu" >
+      <i class="material-icons">toc</i>
+    </a>
+  </div>
+  <div #menu_button_close>
+    <a class="circle-button" href="javascript:;" title="Close menu" >
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+</div>
+<script>
+function navigateTo(anchor) {
+  const target = zuix.$.find('a[name="' + anchor + '"]');
+  scrollHelper.scrollTo(target, 300);
+}
+</script>
+
+
+<footer self="size-large" layout="columns center-center" style="min-height: 80px">
+
+    
+
+</footer>
+
+
+
+
+<!-- Built with love using zUIx Web Starter -->
+
+
+
+</body>
+
+<!-- page script -->
+<script>
+    function closeContent() {
+  if (window.parent.closeContentFrame) {
+    window.parent.closeContentFrame(location);
+  } else {
+    location.href = '../../../home';
+  }
+}
+function shareContent() {
+  const item = {
+    title: document.title,
+    text: document.querySelector('meta[name="description"]').content,
+    url: document.location.href
+  };
+  if (navigator.share) {
+    navigator.share(item).then(() => {
+      console.log('Document url shared.');
+    }).catch(console.error);
+  } else {
+    console.log(item);
+    console.log('Sharing is not available in the current context');
+  }
+}
+function printContent() {
+  window.print();
+}
+
+document.body.addEventListener('keyup', function(e) {
+  if (e.key === 'Escape') {
+    const actionMenu = zuix.context('actions-menu');
+    if (!actionMenu || !actionMenu.showing()) {
+      closeContent();
+    }
+  }
+});
+
+const history = window.history;
+if (history && history.pushState) {
+  history.pushState('back-detect', null, '#open');
+  window.onpopstate = function() {
+    closeContent();
+  };
+}
+
+</script>
+
+
+</html>
+

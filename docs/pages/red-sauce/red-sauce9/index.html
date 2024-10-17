@@ -1,0 +1,478 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="page-description">
+    <meta name="keywords" content="Penne Arrabbiata" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penne Arrabbiata</title>
+    <link rel="author" href="humans.txt" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/images/icons/desktop/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/images/icons/desktop/android-chrome-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="A zUIx website">
+    <link rel="apple-touch-icon-precomposed" href="/images/icons/desktop/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/icons/desktop/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Tile color for Windows -->
+    <meta name="msapplication-TileImage" content="/images/icons/desktop/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/desktop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/desktop/favicon-16x16.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="https://www.example.com/">
+    -->
+
+    <link rel="preload" as="style" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="stylesheet" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="preload" as="style" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+
+
+
+    <!-- zuix.js https://github.com/zuixjs/zuix -->
+    <link rel="preload" as="script" href="/js/zuix/zuix.min.js">
+    <link rel="preload" as="script" href="/config.js">
+    <link rel="preload" as="script" href="/js/zuix/animate-css.js">
+    <script src="/js/zuix/zuix.min.js"></script>
+    <script src="/config.js"></script>
+    <script src="/js/zuix/animate-css.js"></script>
+
+<style>
+:root {
+    --primary-color: #000;
+    --accent-color: deeppink;
+    --background-color: #ffffff;
+    --header-color: #1765bd;
+    --header-background-color: rgba(248,248,248,1);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+main {
+    overflow-x: hidden;
+    width: 100%;
+}
+a {
+    text-decoration: none!important;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 150%;
+    line-height: 140%;
+    font-family: serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+p code {
+    opacity: 0.8;
+    font-size: 85%!important;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    line-height: 160%;
+    margin-bottom: 8px;
+}
+li pre {
+    line-height: 100%;
+}
+h1,h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h1 {
+    font-size: 220%;
+    font-weight: 700;
+}
+h2 {
+    opacity: 0.8;
+    font-size:160%;
+    font-weight: 700;
+    line-height: 36px;
+}
+h3 {
+    opacity: 0.6;
+    font-size:140%;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+h4 {
+    opacity: 0.6;
+}
+h5 {
+    opacity: 0.6;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color:gray;
+}
+
+blockquote {
+    opacity: 50%;
+}
+
+header {
+    width: 100%;
+    color: var(--header-color);
+    text-shadow:
+            3px 3px 0 rgba(0,0,0,5%),
+            -1px -1px 0 rgba(0,0,0,5%),
+            1px -1px 0 rgba(0,0,0,5%),
+            -1px 1px 0 rgba(0,0,0,5%),
+            1px 1px 0 rgba(0,0,0,5%);
+}
+header a,header a:visited {
+    color: var(--header-color);
+}
+header h1 {
+    margin: 0;
+}
+header .material-icons {
+    font-size: 280%;
+    opacity: 0.5;
+}
+footer {
+    width: 100%;
+/*    color: #FFF59D; */
+}
+footer a {
+/*    color: white; */
+    font-size:110%;
+}
+
+li small {
+    font-family: Helvetica, sans-serif;
+    font-size: 60%;
+    font-weight: 600;
+    margin-left: 6px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+pre {
+    margin-top: 24px!important;
+    margin-bottom: 24px!important;
+    max-width: 100%;
+}
+code {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+pre[class*="language-"] {
+    font-size: 120%;
+}
+
+pre code {
+    color: darkgreen;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+ul.list {
+    margin-top: 0;
+}
+ul.list li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+    transition: all .2s ease-out;
+}
+button:hover, button:active {
+    background: rgba(180,180,180,0.1)!important;
+    box-shadow: inset 0 0 0 2px rgb(37 44 97 / 9%), 0 0 0 0 rgb(93 100 148 / 7%);
+}
+
+.header-cover {
+    padding: 8px;
+    height: 64px;
+    background: var(--header-background-color);
+    border-bottom: solid 1px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 2px -2px rgba(100,100,100,0.15);
+}
+.main-content {
+    padding: 24px 8px 48px;
+    color:  black;
+}
+
+.title {
+    padding: 8px;
+    /*
+    max-width: calc(100vw - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     */
+}
+.image-cover {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body layout="column top-center">
+
+
+    <img class="image-cover" src="https://es.giallozafferano.com/images/3-396/Penne-all-Arrabbiata_650x433_wm.jpg">
+
+
+<h1 class="title animate__animated animate__fadeIn">Penne Arrabbiata</h1>
+
+    <div self="size-large" layout="column top-stretch" style="padding-right: 12px;padding-left: 12px">
+        <small>24 Sep 2024</small>
+    </div>
+
+
+<main self="size-large center" class="main-content animate__animated animate__fadeIn" layout="column top-stretch">
+
+    <p>Penne Arrabbiata is a classic dish of Italian cuisine, originating from the Lazio region, and is known for its simplicity and characteristic spicy kick.</p>
+<p>The term &quot;arrabbiata&quot; translates as &quot;angry&quot;, which refers to the spicy mix of garlic, chilli and tomato used in the sauce.</p>
+<p>This pasta is ideal for those looking for a quick meal but full of flavour and an explosion of aromas.</p>
+<p>In addition, Penne Arrabbiata is a very versatile dish that can be adapted to different tastes and food preferences.</p>
+<p><u><b>Ingredients For 4 people:</b></u></p>
+<p>-400 g of penne (tube pasta)</p>
+<p>-4-5 cloves of garlic, finely chopped.</p>
+<p>-1-2 dried chillies (adjust according to your tolerance for spiciness)</p>
+<p>-400 g of crushed tomatoes (fresh or canned)</p>
+<p>-3-4 tablespoons of olive oil.</p>
+<p>-Salt and pepper to taste.</p>
+<p>-Fresh parsley or basil, chopped (optional, for garnish)</p>
+<p>-Grated parmesan cheese (optional, for serving)</p>
+<p><u><b>Step-by-Step Preparation</b></u></p>
+<p><b>Cook the pasta:</b></p>
+<p>---In a large pot, fill with water and add salt.</p>
+<p>---Bring to a boil and cook the penne according to package directions, until al dente.</p>
+<p>---Drain and set aside, reserving some of the cooking water.</p>
+<p><b>Prepare the sauce:</b></p>
+<p>---In a large skillet, heat the olive oil over medium heat.</p>
+<p>---Add the chopped garlic cloves and dried chillies.</p>
+<p>---Sauté for 1-2 minutes, taking care not to burn the garlic, as this can make the sauce bitter.</p>
+<p><b>Add the tomato:</b></p>
+<p>---Add the crushed tomato to the pan and bring to a boil.</p>
+<p>---Reduce the heat and simmer for about 10-15 minutes, stirring occasionally.</p>
+<p>---If the sauce thickens too much, you can add a little of the reserved cooking water.</p>
+<p><b>Season:</b></p>
+<p>---Add salt and pepper to taste and taste the sauce. If you like it spicier, you can add more chilli.</p>
+<p><b>Mix the pasta:</b></p>
+<p>---Once the sauce is ready, add the cooked penne to the pan and mix well so that the pasta is coated with the sauce.</p>
+<p>---Cook for a couple more minutes.</p>
+<p><b>Serve:</b></p>
+<p>---Serve hot, garnishing with fresh parsley or chopped basil and sprinkling with grated parmesan cheese to taste.</p>
+<p><u><b>Variations</b></u></p>
+<p><b>***With vegetables:</b></p>
+<p>You can add red peppers, zucchini or spinach to the sauce for extra nutrients and colour.</p>
+<p><b>***Protein-based:</b></p>
+<p>Add grilled chicken breasts, shrimp, or chorizo ​​to make the dish more substantial.</p>
+<p><b>***Vegetarian Version:</b></p>
+<p>Make sure the parmesan cheese you use is vegetarian or substitute nutritional yeast for an umami flavor without animal products.</p>
+<p><b>***Creamy Arrabbiata:</b></p>
+<p>Add a little heavy cream at the end of cooking for a milder touch in flavor, although this changes the essence of the dish.</p>
+<p><b>***Pasta Substitution:</b></p>
+<p>Swap the penne for another short pasta like rigatoni or fusilli according to your preference.</p>
+<p><b><i>Enjoy this delicious and spicy Penne Arrabbiata dish!</i></b> It's perfect for a quick and satisfying meal.</p>
+<img src="https://www.recipetineats.com/uploads/2023/10/Penne-Arrabbiata-4.jpg" width="300" height="300">
+
+
+    
+
+
+
+
+<div layout="row center-spread" style="margin-top: 56px; margin-bottom: 56px; padding-left: 8px; padding-right: 8px; font-size: 140%">
+
+    
+    <a href="/pages/red-sauce/red-sauce10/" style="text-align: center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOW_rMHgSOi4IhmfR8AiWo2bwLV7WdK3uoUA&s" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Spaghetti Bolognese</div>
+        <div layout="row center-center">
+            <i class="material-icons">arrow_left</i>&nbsp;
+            <span style="padding-right: 24px">Previous</span>
+        </div>
+    </a>
+    
+
+    
+    <a href="/pages/red-sauce/red-sauce8/" style="text-align: center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62B7IItGtn7tZXq0l7GQGvlKjZoXkanPNSw&s" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Fusilli with Marinara Sauce</div>
+        <div layout="row center-center">
+            <span style="padding-left: 24px">Next</span>
+            <i class="material-icons">arrow_right</i>&nbsp;
+        </div>
+    </a>
+    
+
+</div>
+<style>
+    .navigation-image {
+        border-radius: 32px;
+        border-color: rgba(100,200,200,0.5);
+    }
+    .navigation-title {
+        margin: 8px;
+        opacity: 0.6;
+        color: darkgreen;
+        font-size: 80%;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
+
+
+    <!--
+// TODO: List of related pages
+-->
+
+
+</main>
+
+<div z-load="@lib/components/menu-overlay" z-context="actions-menu" z-lazy="false" class="visible-on-ready">
+<div #items>    <button onclick="closeContent()" style="height:42px;"><span>Close</span><i class="material-icons"> close</i></button>
+</div>
+  <!-- custom open/close menu button -->
+  <div #menu_button>
+    <a class="circle-button" href="javascript:;" title="Open menu" >
+      <i class="material-icons">toc</i>
+    </a>
+  </div>
+  <div #menu_button_close>
+    <a class="circle-button" href="javascript:;" title="Close menu" >
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+</div>
+<script>
+function navigateTo(anchor) {
+  const target = zuix.$.find('a[name="' + anchor + '"]');
+  scrollHelper.scrollTo(target, 300);
+}
+</script>
+
+
+<footer self="size-large" layout="columns center-center" style="min-height: 80px">
+
+    
+
+</footer>
+
+
+
+
+<!-- Built with love using zUIx Web Starter -->
+
+
+
+</body>
+
+<!-- page script -->
+<script>
+    function closeContent() {
+  if (window.parent.closeContentFrame) {
+    window.parent.closeContentFrame(location);
+  } else {
+    location.href = '../../../home';
+  }
+}
+function shareContent() {
+  const item = {
+    title: document.title,
+    text: document.querySelector('meta[name="description"]').content,
+    url: document.location.href
+  };
+  if (navigator.share) {
+    navigator.share(item).then(() => {
+      console.log('Document url shared.');
+    }).catch(console.error);
+  } else {
+    console.log(item);
+    console.log('Sharing is not available in the current context');
+  }
+}
+function printContent() {
+  window.print();
+}
+
+document.body.addEventListener('keyup', function(e) {
+  if (e.key === 'Escape') {
+    const actionMenu = zuix.context('actions-menu');
+    if (!actionMenu || !actionMenu.showing()) {
+      closeContent();
+    }
+  }
+});
+
+const history = window.history;
+if (history && history.pushState) {
+  history.pushState('back-detect', null, '#open');
+  window.onpopstate = function() {
+    closeContent();
+  };
+}
+
+</script>
+
+
+</html>
+

@@ -1,0 +1,474 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="page-description">
+    <meta name="keywords" content="Cold Pasta with Salmon and Dill" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Pasta with Salmon and Dill</title>
+    <link rel="author" href="humans.txt" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/images/icons/desktop/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/images/icons/desktop/android-chrome-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="A zUIx website">
+    <link rel="apple-touch-icon-precomposed" href="/images/icons/desktop/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/icons/desktop/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Tile color for Windows -->
+    <meta name="msapplication-TileImage" content="/images/icons/desktop/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/desktop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/desktop/favicon-16x16.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="https://www.example.com/">
+    -->
+
+    <link rel="preload" as="style" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="stylesheet" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="preload" as="style" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+
+
+
+    <!-- zuix.js https://github.com/zuixjs/zuix -->
+    <link rel="preload" as="script" href="/js/zuix/zuix.min.js">
+    <link rel="preload" as="script" href="/config.js">
+    <link rel="preload" as="script" href="/js/zuix/animate-css.js">
+    <script src="/js/zuix/zuix.min.js"></script>
+    <script src="/config.js"></script>
+    <script src="/js/zuix/animate-css.js"></script>
+
+<style>
+:root {
+    --primary-color: #000;
+    --accent-color: deeppink;
+    --background-color: #ffffff;
+    --header-color: #1765bd;
+    --header-background-color: rgba(248,248,248,1);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+main {
+    overflow-x: hidden;
+    width: 100%;
+}
+a {
+    text-decoration: none!important;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 150%;
+    line-height: 140%;
+    font-family: serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+p code {
+    opacity: 0.8;
+    font-size: 85%!important;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    line-height: 160%;
+    margin-bottom: 8px;
+}
+li pre {
+    line-height: 100%;
+}
+h1,h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h1 {
+    font-size: 220%;
+    font-weight: 700;
+}
+h2 {
+    opacity: 0.8;
+    font-size:160%;
+    font-weight: 700;
+    line-height: 36px;
+}
+h3 {
+    opacity: 0.6;
+    font-size:140%;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+h4 {
+    opacity: 0.6;
+}
+h5 {
+    opacity: 0.6;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color:gray;
+}
+
+blockquote {
+    opacity: 50%;
+}
+
+header {
+    width: 100%;
+    color: var(--header-color);
+    text-shadow:
+            3px 3px 0 rgba(0,0,0,5%),
+            -1px -1px 0 rgba(0,0,0,5%),
+            1px -1px 0 rgba(0,0,0,5%),
+            -1px 1px 0 rgba(0,0,0,5%),
+            1px 1px 0 rgba(0,0,0,5%);
+}
+header a,header a:visited {
+    color: var(--header-color);
+}
+header h1 {
+    margin: 0;
+}
+header .material-icons {
+    font-size: 280%;
+    opacity: 0.5;
+}
+footer {
+    width: 100%;
+/*    color: #FFF59D; */
+}
+footer a {
+/*    color: white; */
+    font-size:110%;
+}
+
+li small {
+    font-family: Helvetica, sans-serif;
+    font-size: 60%;
+    font-weight: 600;
+    margin-left: 6px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+pre {
+    margin-top: 24px!important;
+    margin-bottom: 24px!important;
+    max-width: 100%;
+}
+code {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+pre[class*="language-"] {
+    font-size: 120%;
+}
+
+pre code {
+    color: darkgreen;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+ul.list {
+    margin-top: 0;
+}
+ul.list li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+    transition: all .2s ease-out;
+}
+button:hover, button:active {
+    background: rgba(180,180,180,0.1)!important;
+    box-shadow: inset 0 0 0 2px rgb(37 44 97 / 9%), 0 0 0 0 rgb(93 100 148 / 7%);
+}
+
+.header-cover {
+    padding: 8px;
+    height: 64px;
+    background: var(--header-background-color);
+    border-bottom: solid 1px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 2px -2px rgba(100,100,100,0.15);
+}
+.main-content {
+    padding: 24px 8px 48px;
+    color:  black;
+}
+
+.title {
+    padding: 8px;
+    /*
+    max-width: calc(100vw - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     */
+}
+.image-cover {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body layout="column top-center">
+
+
+    <img class="image-cover" src="https://onevanillabean.com/wp-content/uploads/2011/04/salmon-pasta-salad-with-dill2.jpg">
+
+
+<h1 class="title animate__animated animate__fadeIn">Cold Pasta with Salmon and Dill</h1>
+
+    <div self="size-large" layout="column top-stretch" style="padding-right: 12px;padding-left: 12px">
+        <small>24 Sep 2024</small>
+    </div>
+
+
+<main self="size-large center" class="main-content animate__animated animate__fadeIn" layout="column top-stretch">
+
+    <p>Cold Pasta with Salmon and Dill is a refreshing and flavorful dish that combines the richness of salmon with the bright notes of dill and lemon. It’s perfect for summer gatherings, picnics, or as a light lunch. The dish is not only tasty but also quick and easy to prepare, making it a go-to recipe in a busy kitchen.</p>
+<p><b>Ingredients</b></p>
+<p>-8 ounces pasta (fusilli, penne, or farfalle work well)</p>
+<p>-7 ounces smoked salmon, sliced into strips.</p>
+<p>-1 cup cherry tomatoes, halved.</p>
+<p>-1 cup cucumber, diced.</p>
+<p>-1/4 cup red onion, finely chopped.</p>
+<p>-1/4 cup fresh dill, chopped.</p>
+<p>-1/3 cup cream cheese (or Greek yogurt for a lighter option)</p>
+<p>-1/4 cup sour cream or Greek yogurt.</p>
+<p>-2 tablespoons lemon juice.</p>
+<p>-1 tablespoon olive oil.</p>
+<p>-Salt and pepper to taste.</p>
+<p><b><i>Optional:</i></b> capers for garnish.</p>
+<p><u><b>Step-by-Step Preparation</b></u></p>
+<p><b>Cook the Pasta:</b></p>
+<p>--Bring a large pot of salted water to a boil.</p>
+<p>--Add the pasta and cook according to package instructions until al dente.</p>
+<p>--Drain and rinse under cold water to stop the cooking process.</p>
+<p>--Set aside.</p>
+<p><b>Prepare the Dressing:</b></p>
+<p>--In a mixing bowl, combine cream cheese (or Greek yogurt), sour cream (or additional yogurt), lemon juice, olive oil, salt, and pepper.</p>
+<p>--Mix until smooth and well combined.</p>
+<p><b>Combine the Ingredients:</b></p>
+<p>--In a large bowl, add the cooled pasta, smoked salmon, cherry tomatoes, cucumber, red onion, and fresh dill.</p>
+<p><b>Mix Everything Together:</b></p>
+<p>--Pour the dressing over the pasta mixture and toss gently to coat all ingredients evenly.</p>
+<p><b>Taste and Adjust:</b></p>
+<p>Taste the pasta salad and adjust seasoning with additional salt, pepper, or lemon juice as needed.</p>
+<p><b>Chill:</b></p>
+<p>Cover the bowl with plastic wrap and refrigerate for at least 30 minutes to let flavors meld.</p>
+<p><b>Serve:</b></p>
+<p>Serve chilled, garnished with additional dill and capers, if desired.</p>
+<p><u><b>Variations</b></u></p>
+<p>Pasta Variations:</b> Use other types of pasta such as whole wheat, gluten-free, or even spiralized vegetables (like zucchini) for a lighter option.</p>
+<p><b>Additional Proteins:</b> Substitute smoked salmon with cooked shrimp, crab meat, or grilled chicken for a different protein source.</p>
+<p><b>Vegetable Add-Ins:</b> Mix in other vegetables such as bell peppers, arugula, or spinach for more color and nutrition.</p>
+<p><b>Herb Variations:</b> Replace dill with fresh parsley, chives, or tarragon for a unique flavor profile.</p>
+<p><b>Spice It Up:</b> Add red pepper flakes for a spicy kick or a splash of hot sauce in the dressing.</p>
+<p><b>Vegan Option:</b> Swap salmon for marinated tofu or chickpeas and use a plant-based cream cheese or yogurt.</p>
+<p><b><i>Enjoy making and serving this delicious Cold Pasta with Salmon and Dill, and feel free to tailor it to your taste preferences!</i></b></p>
+<img src="https://www.saltandlavender.com/wp-content/uploads/2019/06/smoked-salmon-pasta-recipe-3.jpg" width="300" height="300">
+
+
+    
+
+
+
+
+<div layout="row center-spread" style="margin-top: 56px; margin-bottom: 56px; padding-left: 8px; padding-right: 8px; font-size: 140%">
+
+    
+    <a href="/pages/cold-pastas/cold-pastas5/" style="text-align: center">
+        <img src="https://healthyfitnessmeals.com/wp-content/uploads/2020/03/instagram-In-Stream_Square___Caprese-pasta-salad-4.jpg" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Pasta Salad with Mozzarella and Tomato</div>
+        <div layout="row center-center">
+            <i class="material-icons">arrow_left</i>&nbsp;
+            <span style="padding-right: 24px">Previous</span>
+        </div>
+    </a>
+    
+
+    
+    <a href="/pages/cold-pastas/cold-pastas3/" style="text-align: center">
+        <img src="https://cdn.jwplayer.com/v2/media/iHz2ddPL/poster.jpg?width=720" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Pasta with Olives and Feta</div>
+        <div layout="row center-center">
+            <span style="padding-left: 24px">Next</span>
+            <i class="material-icons">arrow_right</i>&nbsp;
+        </div>
+    </a>
+    
+
+</div>
+<style>
+    .navigation-image {
+        border-radius: 32px;
+        border-color: rgba(100,200,200,0.5);
+    }
+    .navigation-title {
+        margin: 8px;
+        opacity: 0.6;
+        color: darkgreen;
+        font-size: 80%;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
+
+
+    <!--
+// TODO: List of related pages
+-->
+
+
+</main>
+
+<div z-load="@lib/components/menu-overlay" z-context="actions-menu" z-lazy="false" class="visible-on-ready">
+<div #items>    <button onclick="closeContent()" style="height:42px;"><span>Close</span><i class="material-icons"> close</i></button>
+</div>
+  <!-- custom open/close menu button -->
+  <div #menu_button>
+    <a class="circle-button" href="javascript:;" title="Open menu" >
+      <i class="material-icons">toc</i>
+    </a>
+  </div>
+  <div #menu_button_close>
+    <a class="circle-button" href="javascript:;" title="Close menu" >
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+</div>
+<script>
+function navigateTo(anchor) {
+  const target = zuix.$.find('a[name="' + anchor + '"]');
+  scrollHelper.scrollTo(target, 300);
+}
+</script>
+
+
+<footer self="size-large" layout="columns center-center" style="min-height: 80px">
+
+    
+
+</footer>
+
+
+
+
+<!-- Built with love using zUIx Web Starter -->
+
+
+
+</body>
+
+<!-- page script -->
+<script>
+    function closeContent() {
+  if (window.parent.closeContentFrame) {
+    window.parent.closeContentFrame(location);
+  } else {
+    location.href = '../../../home';
+  }
+}
+function shareContent() {
+  const item = {
+    title: document.title,
+    text: document.querySelector('meta[name="description"]').content,
+    url: document.location.href
+  };
+  if (navigator.share) {
+    navigator.share(item).then(() => {
+      console.log('Document url shared.');
+    }).catch(console.error);
+  } else {
+    console.log(item);
+    console.log('Sharing is not available in the current context');
+  }
+}
+function printContent() {
+  window.print();
+}
+
+document.body.addEventListener('keyup', function(e) {
+  if (e.key === 'Escape') {
+    const actionMenu = zuix.context('actions-menu');
+    if (!actionMenu || !actionMenu.showing()) {
+      closeContent();
+    }
+  }
+});
+
+const history = window.history;
+if (history && history.pushState) {
+  history.pushState('back-detect', null, '#open');
+  window.onpopstate = function() {
+    closeContent();
+  };
+}
+
+</script>
+
+
+</html>
+

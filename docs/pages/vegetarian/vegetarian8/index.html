@@ -1,0 +1,535 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="page-description">
+    <meta name="keywords" content="Baked Pasta with Spinach and Ricotta" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked Pasta with Spinach and Ricotta</title>
+    <link rel="author" href="humans.txt" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Progressive Web App -->
+    <meta name="theme-color" content="white">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="/images/icons/desktop/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/images/icons/desktop/android-chrome-512x512.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="A zUIx website">
+    <link rel="apple-touch-icon-precomposed" href="/images/icons/desktop/apple-touch-icon.png">
+    <link rel="mask-icon" href="/images/icons/desktop/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!-- Tile color for Windows -->
+    <meta name="msapplication-TileImage" content="/images/icons/desktop/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/desktop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/desktop/favicon-16x16.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="https://www.example.com/">
+    -->
+
+    <link rel="preload" as="style" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="stylesheet" href="/css/fla/flex-layout-attribute.min.css" />
+    <link rel="preload" as="style" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+
+
+
+    <!-- zuix.js https://github.com/zuixjs/zuix -->
+    <link rel="preload" as="script" href="/js/zuix/zuix.min.js">
+    <link rel="preload" as="script" href="/config.js">
+    <link rel="preload" as="script" href="/js/zuix/animate-css.js">
+    <script src="/js/zuix/zuix.min.js"></script>
+    <script src="/config.js"></script>
+    <script src="/js/zuix/animate-css.js"></script>
+
+<style>
+:root {
+    --primary-color: #000;
+    --accent-color: deeppink;
+    --background-color: #ffffff;
+    --header-color: #1765bd;
+    --header-background-color: rgba(248,248,248,1);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+main {
+    overflow-x: hidden;
+    width: 100%;
+}
+a {
+    text-decoration: none!important;
+    color: var(--accent-color);
+}
+
+p {
+    font-size: 150%;
+    line-height: 140%;
+    font-family: serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+p code {
+    opacity: 0.8;
+    font-size: 85%!important;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    line-height: 160%;
+    margin-bottom: 8px;
+}
+li pre {
+    line-height: 100%;
+}
+h1,h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+h1 {
+    font-size: 220%;
+    font-weight: 700;
+}
+h2 {
+    opacity: 0.8;
+    font-size:160%;
+    font-weight: 700;
+    line-height: 36px;
+}
+h3 {
+    opacity: 0.6;
+    font-size:140%;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+h4 {
+    opacity: 0.6;
+}
+h5 {
+    opacity: 0.6;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color:gray;
+}
+
+blockquote {
+    opacity: 50%;
+}
+
+header {
+    width: 100%;
+    color: var(--header-color);
+    text-shadow:
+            3px 3px 0 rgba(0,0,0,5%),
+            -1px -1px 0 rgba(0,0,0,5%),
+            1px -1px 0 rgba(0,0,0,5%),
+            -1px 1px 0 rgba(0,0,0,5%),
+            1px 1px 0 rgba(0,0,0,5%);
+}
+header a,header a:visited {
+    color: var(--header-color);
+}
+header h1 {
+    margin: 0;
+}
+header .material-icons {
+    font-size: 280%;
+    opacity: 0.5;
+}
+footer {
+    width: 100%;
+/*    color: #FFF59D; */
+}
+footer a {
+/*    color: white; */
+    font-size:110%;
+}
+
+li small {
+    font-family: Helvetica, sans-serif;
+    font-size: 60%;
+    font-weight: 600;
+    margin-left: 6px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+pre {
+    margin-top: 24px!important;
+    margin-bottom: 24px!important;
+    max-width: 100%;
+}
+code {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+pre[class*="language-"] {
+    font-size: 120%;
+}
+
+pre code {
+    color: darkgreen;
+    font-size: 100%;
+    line-height: 140%;
+}
+
+ul.list {
+    margin-top: 0;
+}
+ul.list li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+    transition: all .2s ease-out;
+}
+button:hover, button:active {
+    background: rgba(180,180,180,0.1)!important;
+    box-shadow: inset 0 0 0 2px rgb(37 44 97 / 9%), 0 0 0 0 rgb(93 100 148 / 7%);
+}
+
+.header-cover {
+    padding: 8px;
+    height: 64px;
+    background: var(--header-background-color);
+    border-bottom: solid 1px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 2px -2px rgba(100,100,100,0.15);
+}
+.main-content {
+    padding: 24px 8px 48px;
+    color:  black;
+}
+
+.title {
+    padding: 8px;
+    /*
+    max-width: calc(100vw - 72px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     */
+}
+.image-cover {
+    width: 100%;
+    height: auto;
+    max-width: 960px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body layout="column top-center">
+
+
+    <img class="image-cover" src="https://www.onceuponachef.com/images/2016/10/baked-penne-01.jpg">
+
+
+<h1 class="title animate__animated animate__fadeIn">Baked Pasta with Spinach and Ricotta</h1>
+
+    <div self="size-large" layout="column top-stretch" style="padding-right: 12px;padding-left: 12px">
+        <small>24 Sep 2024</small>
+    </div>
+
+
+<main self="size-large center" class="main-content animate__animated animate__fadeIn" layout="column top-stretch">
+
+    <p>Here's a detailed review, recipe, ingredients list, step-by-step preparation method, and variations for Baked Pasta with Spinach and Ricotta.</p>
+<p>Baked Pasta with Spinach and Ricotta is a comforting, cheesy dish that combines the flavors of creamy ricotta cheese with tender spinach and al dente pasta. It's easy to prepare and perfect for family dinners or gatherings. The combination of textures—from the creamy filling to the crispy top layer—makes every bite delightful. It's also versatile, allowing for various substitutions of ingredients and additional flavors.</p>
+<p><u><b>Recipe for Baked Pasta with Spinach and Ricotta</b></u></p>
+<p><b>Ingredients</b></p>
+<p><strong>Pasta:</strong></p>
+<p>-12 oz (340 g) pasta (penne, fusilli, or any preferred shape)</p>
+<p><strong>Spinach Filling</strong>:</p>
+<ul>
+<li>
+<p>1 tablespoon olive oil</p>
+</li>
+<li>
+<p>2 cloves garlic, minced</p>
+</li>
+<li>
+<p>10 oz (280 g) fresh spinach, washed and roughly chopped (or 1 cup frozen spinach, thawed and drained)</p>
+</li>
+<li>
+<p>1 cup ricotta cheese</p>
+</li>
+<li>
+<p>1 cup grated mozzarella cheese, divided (plus extra for topping)</p>
+</li>
+<li>
+<p>1/2 cup grated Parmesan cheese</p>
+</li>
+<li>
+<p>1 large egg</p>
+</li>
+<li>
+<p>Salt and pepper to taste</p>
+</li>
+<li>
+<p>1/4 teaspoon nutmeg (optional)</p>
+</li>
+</ul>
+<p><strong>Sauce</strong>:</p>
+<p>-2 cups marinara sauce (homemade or store-bought)</p>
+<p><strong>Topping</strong>:</p>
+<ul>
+<li>
+<p>1/2 cup breadcrumbs (optional, for a crispy topping)</p>
+</li>
+<li>
+<p>Extra grated Parmesan cheese for sprinkling</p>
+</li>
+</ul>
+<p><u><b>Step-by-Step Preparation Method</b></u></p>
+<p>1 <strong>Preheat the Oven</strong>:</p>
+<p>Preheat your oven to 375°F (190°C).</p>
+<p>2 <strong>Cook the Pasta</strong>:</p>
+<p>In a large pot, boil salted water and cook the pasta according to package instructions until al dente. Drain and set aside.</p>
+<p>3 <strong>Prepare the Spinach Filling</strong>:</p>
+<p>-In a large skillet, heat olive oil over medium heat. Add minced garlic and sauté for about 1 minute until fragrant.</p>
+<p>-Add the spinach and sauté until wilted (if using fresh) or heated through (if using frozen). Remove from heat and allow it to cool slightly.</p>
+<p>-In a large mixing bowl, combine ricotta cheese, half the mozzarella cheese, Parmesan cheese, egg, nutmeg (if using), salt, and pepper. Mix until well combined.</p>
+<p>-Stir in the sautéed spinach until evenly incorporated.</p>
+<p>4 <strong>Assemble the Pasta</strong>:</p>
+<ul>
+<li>
+<p>In a large baking dish (about 9x13 inches), spread half of the marinara sauce on the bottom.</p>
+</li>
+<li>
+<p>Layer half of the cooked pasta over the sauce.</p>
+</li>
+<li>
+<p>Spread the spinach and ricotta mixture over the pasta.</p>
+</li>
+<li>
+<p>Add the remaining pasta on top, then pour the rest of the marinara sauce over it.</p>
+</li>
+<li>
+<p>Sprinkle the remaining mozzarella cheese and the extra Parmesan cheese on top.</p>
+</li>
+</ul>
+<p>5 <strong>Add Topping (optional)</strong>:</p>
+<p>-If you like a crispy topping, mix breadcrumbs with a bit of olive oil and sprinkle over the cheese.</p>
+<p>6 <strong>Bake</strong>:</p>
+<p>-Cover the baking dish with aluminum foil and bake in the preheated oven for 20 minutes.</p>
+<p>-Remove the foil and bake for an additional 15-20 minutes until the cheese is bubbly and golden brown.</p>
+<p>7.<strong>Cool and Serve</strong>:</p>
+<p>A-low the baked pasta to cool for about 5 minutes before serving. Enjoy!</p>
+<p><u><b>Variations</b></u></p>
+<ul>
+<li>
+<p><strong>Protein Addition</strong>: Add cooked chicken, sausage, or ground beef to the spinach filling or mix it with the pasta for added protein.</p>
+</li>
+<li>
+<p><strong>Cheese Variations</strong>: Substitute ricotta with cottage cheese or cream cheese for a different texture. Experiment with different cheeses like feta or goat cheese for added flavor.</p>
+</li>
+<li>
+<p><strong>Vegetable Additions</strong>: Incorporate other vegetables such as mushrooms, zucchini, or bell peppers into the filling for a heartier dish.</p>
+</li>
+<li>
+<p><strong>Herbs and Spices</strong>: Enhance the flavor by adding fresh herbs such as basil, oregano, or thyme, or spices such as crushed red pepper for a bit of heat.</p>
+</li>
+<li>
+<p><strong>Gluten-Free Options</strong>: Use gluten-free pasta to suit dietary preferences.</p>
+</li>
+</ul>
+<p>This Baked Pasta with Spinach and Ricotta is a versatile dish that can easily be customized to accommodate various tastes and preferences.</p>
+<p><b><i>Enjoy your cooking!</i></b></p>
+<img src="https://www.recipetineats.com/uploads/2015/09/Spinach-Ricotta-Pasta-Bake_6.jpg" width="300" height="300">
+
+
+    
+
+
+
+
+<div layout="row center-spread" style="margin-top: 56px; margin-bottom: 56px; padding-left: 8px; padding-right: 8px; font-size: 140%">
+
+    
+    <a href="/pages/vegetarian/vegetarian9/" style="text-align: center">
+        <img src="https://fullofplants.com/wp-content/uploads/2023/04/quick-vegan-pasta-vegetable-stir-fry-with-ginger-and-garlic-8-500x375.jpg" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Fusilli with Sautéed Vegetables and Soy Sauce</div>
+        <div layout="row center-center">
+            <i class="material-icons">arrow_left</i>&nbsp;
+            <span style="padding-right: 24px">Previous</span>
+        </div>
+    </a>
+    
+
+    
+    <a href="/pages/vegetarian/vegetarian6/" style="text-align: center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNK75E61jHOBwdegExE9q3-e1BI8L5NmuMA&s" class="navigation-image" width="128" height="72">
+        <div class="navigation-title">Spring Pasta with Seasonal Vegetables</div>
+        <div layout="row center-center">
+            <span style="padding-left: 24px">Next</span>
+            <i class="material-icons">arrow_right</i>&nbsp;
+        </div>
+    </a>
+    
+
+</div>
+<style>
+    .navigation-image {
+        border-radius: 32px;
+        border-color: rgba(100,200,200,0.5);
+    }
+    .navigation-title {
+        margin: 8px;
+        opacity: 0.6;
+        color: darkgreen;
+        font-size: 80%;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
+
+
+    <!--
+// TODO: List of related pages
+-->
+
+
+</main>
+
+<div z-load="@lib/components/menu-overlay" z-context="actions-menu" z-lazy="false" class="visible-on-ready">
+<div #items>    <button onclick="closeContent()" style="height:42px;"><span>Close</span><i class="material-icons"> close</i></button>
+</div>
+  <!-- custom open/close menu button -->
+  <div #menu_button>
+    <a class="circle-button" href="javascript:;" title="Open menu" >
+      <i class="material-icons">toc</i>
+    </a>
+  </div>
+  <div #menu_button_close>
+    <a class="circle-button" href="javascript:;" title="Close menu" >
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+</div>
+<script>
+function navigateTo(anchor) {
+  const target = zuix.$.find('a[name="' + anchor + '"]');
+  scrollHelper.scrollTo(target, 300);
+}
+</script>
+
+
+<footer self="size-large" layout="columns center-center" style="min-height: 80px">
+
+    
+
+</footer>
+
+
+
+
+<!-- Built with love using zUIx Web Starter -->
+
+
+
+</body>
+
+<!-- page script -->
+<script>
+    function closeContent() {
+  if (window.parent.closeContentFrame) {
+    window.parent.closeContentFrame(location);
+  } else {
+    location.href = '../../../home';
+  }
+}
+function shareContent() {
+  const item = {
+    title: document.title,
+    text: document.querySelector('meta[name="description"]').content,
+    url: document.location.href
+  };
+  if (navigator.share) {
+    navigator.share(item).then(() => {
+      console.log('Document url shared.');
+    }).catch(console.error);
+  } else {
+    console.log(item);
+    console.log('Sharing is not available in the current context');
+  }
+}
+function printContent() {
+  window.print();
+}
+
+document.body.addEventListener('keyup', function(e) {
+  if (e.key === 'Escape') {
+    const actionMenu = zuix.context('actions-menu');
+    if (!actionMenu || !actionMenu.showing()) {
+      closeContent();
+    }
+  }
+});
+
+const history = window.history;
+if (history && history.pushState) {
+  history.pushState('back-detect', null, '#open');
+  window.onpopstate = function() {
+    closeContent();
+  };
+}
+
+</script>
+
+
+</html>
+
